@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Box</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 50%;
+            height: 600px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 70%;
+            background-color: black;
+            height: 70%;
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px 10px rgb(210, 90, 110);
+            border-bottom: 2px yellow solid;
+            border-right: 2px yellow solid;
+            box-sizing: border-box;
+            animation:scaleBox 1s ease-in-out infinite;
+            
+        }
+
+        @keyframes scaleBox {
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform:scale(1.7);
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            
+        </div>
+    </div>
+</body>
+</html>
